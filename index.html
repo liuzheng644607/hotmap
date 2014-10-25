@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jQuery.hotmap.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+
+/*
+.hotmap-drag-box{
+    border: 1px dashed #3ebee7;
+    position: absolute;
+    background-color: rgba(199, 207, 219, 0.3);
+    cursor: move;
+};
+.hotmap-drag-box .hotmap-drag-inner{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: block;
+    left:50%;
+    margin-left:-48%;
+    overflow:hidden;
+}
+#hotmap-proxy-box{
+    display: none;
+    border: 1px dashed #3ebee7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(199, 207, 219, 0.3);
+}
+.hotmap-drag-box .delete{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -5px;
+    top: -5px;
+    color: #fff;
+    line-height: 12px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #ec5653
+});
+
+.hotmap-drag-box .resize{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: -4px;
+    bottom: -4px;
+    display: block;
+    background-color: #3ebee7;
+    border-radius: 50%;
+    cursor: nw-resize;
+}*/
+</style>
+</head>
+
+<body>
+<div class="box">
+    <img class="img1" src="1.png">
+</div>
+<script type="text/javascript">
+    $(function(){
+        
+    });
+
+    $(".img1").load(function() {
+        $(".img1").Hotmap({
+            maps:[{
+            pos:[22,44,544,355],
+            link:"http:123.com",
+            title:"123"
+        },{pos:[220,441,544,200],
+            link:"http:789.com",
+            title:"789"
+        },{pos:[555,100,544,355],
+            link:"http:456.com",
+            title:"456"
+        }]
+        });
+    })
+        
+    
+</script>
+</body>
+
+</html> 
